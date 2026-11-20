@@ -1,0 +1,482 @@
+@import "tailwindcss";
+
+/* Fonts, self-hosted (no requests to Google).
+   BeautyLuxury: H1 display headings only. Capitals are the upright serif; lowercase letters are swash capitals,
+     so headings are written in capitals with the odd lowercase letter as a flourish.
+     LICENCE: the supplied file is "personal use only" (Nirmana Visual). Buy the commercial licence before launch.
+   Cormorant Garamond: H2-H4, statements and pull quotes.  DM Sans: everything else. */
+@import "@fontsource/cormorant-garamond/300.css";
+@import "@fontsource/cormorant-garamond/300-italic.css";
+@import "@fontsource/cormorant-garamond/400.css";
+@import "@fontsource/cormorant-garamond/400-italic.css";
+@import "@fontsource/cormorant-garamond/500.css";
+@import "@fontsource-variable/dm-sans";
+
+@font-face {
+  font-family: "BeautyLuxury";
+  src: url("../assets/fonts/BeautyLuxury-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*
+  ELITE HAIR & BEAUTY design tokens: Burgundy & Dusty Rose. Every colour, font, size and easing is named here once.
+
+  Primary:    cherry #351D27 (nav, footer, dramatic sections, strong headlines) · burgundy #713C4B (secondary dark,
+              primary buttons) · rose #A66C70 (accent: hairlines, hovers, details) · blush #D6B8AC (secondary
+              ground, soft transitions) · ivory #F2E9E3 (main light ground)
+  Supporting: white #FAF7F4 · charcoal #30282A · taupe #9A8581 · champagne #E5D4CC
+  Distribution: ~65% light grounds, ~25% dark, ~10% accent.
+
+  Derived for accessible small text (AA at body size on their intended grounds):
+    rose-ink  #7E4A54  accent text on ivory / white / champagne
+    muted     #6B5A58  secondary text on light grounds
+    mist      #C9B3AD  secondary text on cherry / burgundy / charcoal
+*/
+@theme {
+  --font-sans: "DM Sans Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", "Times New Roman", serif;
+  --font-display: "BeautyLuxury", "Cormorant Garamond", "Times New Roman", serif;
+
+  --color-cherry: #351d27;
+  --color-cherry-deep: #2a1720;
+  --color-burgundy: #713c4b;
+  --color-rose: #a66c70;
+  --color-blush: #d6b8ac;
+  --color-ivory: #f2e9e3;
+  --color-white: #faf7f4;
+  --color-charcoal: #30282a;
+  --color-taupe: #9a8581;
+  --color-champagne: #e5d4cc;
+  --color-rose-ink: #7e4a54;
+  --color-muted: #6b5a58;
+  --color-mist: #c9b3ad;
+  --color-line-dark: rgb(242 233 227 / 0.16);
+  --color-line-light: rgb(53 29 39 / 0.14);
+  --color-danger: #a3352f;
+  --color-danger-light: #f0a59c;
+  --color-success: #4d6b4a;
+
+  /* Type scale: one fluid scale for the whole site. Display = the hero; h1 = page titles (BeautyLuxury). */
+  --text-display: clamp(3.6rem, 0.9rem + 9.6vw, 12.5rem);
+  --text-display--line-height: 0.86;
+  --text-h1: clamp(3rem, 1.3rem + 5.6vw, 7.75rem);
+  --text-h1--line-height: 0.92;
+  --text-h2: clamp(2.375rem, 1.55rem + 3vw, 4.5rem);
+  --text-h2--line-height: 1.02;
+  --text-h3: clamp(1.75rem, 1.4rem + 1.3vw, 2.625rem);
+  --text-h3--line-height: 1.1;
+  --text-h4: clamp(1.375rem, 1.25rem + 0.5vw, 1.75rem);
+  --text-h4--line-height: 1.2;
+  --text-lead: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem);
+  --text-lead--line-height: 1.75;
+  --text-body: 1rem;
+  --text-body--line-height: 1.8;
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.7;
+  --text-label: 0.6875rem;
+  --text-label--line-height: 1.4;
+
+  --tracking-label: 0.3em;
+
+  /* Spacing rhythm (8px base), used by name so every section follows the same steps:
+     gutter = page margin, section = space between sections, band = compact bands,
+     stack = the eyebrow -> heading -> copy -> action rhythm. */
+  --spacing-gutter: clamp(1rem, 0.4rem + 3vw, 4rem);
+  --spacing-section: clamp(6rem, 3.5rem + 8vw, 11rem);
+  --spacing-band: clamp(4rem, 2.75rem + 4vw, 6.5rem);
+  --spacing-stack: clamp(1.5rem, 1.25rem + 0.8vw, 2rem);
+
+  /* One easing for the whole site: a sophisticated ease-out, cubic-bezier(0.16, 1, 0.3, 1) - a quicker, noticeable
+     start that decelerates and glides into place. Shared with Motion (utils/motion.js) and Tailwind's default. */
+  --ease-site: cubic-bezier(0.16, 1, 0.3, 1);
+  --default-transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  --default-transition-duration: 900ms;
+  --ease-in: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Photo frames: 5px corners, a 3px Dusty Rose border and a slight drop shadow in Black Cherry at 40% (the web
+     equivalent of a multiply shadow at 40%: it darkens what's beneath and disappears on dark sections). */
+  --radius-frame: 5px;
+  --frame-width: 3px;
+  --shadow-frame: 0 14px 26px -12px rgb(42 23 32 / 0.4);
+  /* Buttons share the same shadow colour and strength, scaled down to their size. */
+  --shadow-button: 0 10px 20px -10px rgb(42 23 32 / 0.4);
+
+  --animate-scroll-cue: scroll-cue 3.2s var(--ease-site) infinite;
+  @keyframes scroll-cue {
+    0% {
+      transform: scaleY(0);
+      transform-origin: top;
+    }
+    45% {
+      transform: scaleY(1);
+      transform-origin: top;
+    }
+    55% {
+      transform: scaleY(1);
+      transform-origin: bottom;
+    }
+    100% {
+      transform: scaleY(0);
+      transform-origin: bottom;
+    }
+  }
+  --animate-marquee: marquee 70s linear infinite;
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/* Small uppercase label: eyebrows, buttons, nav, captions. */
+@utility label {
+  font-family: var(--font-sans);
+  font-size: var(--text-label);
+  line-height: var(--text-label--line-height);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+}
+
+/* The page margin and the widest content measure, used by every section. */
+@utility shell {
+  width: 100%;
+  max-width: 96rem;
+  margin-inline: auto;
+  padding-inline: var(--spacing-gutter);
+}
+
+/* BeautyLuxury display headings. */
+@utility display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  font-kerning: normal;
+}
+
+/* Cormorant statements (H2-H4, pull quotes). */
+@utility statement {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+
+/* A photograph's frame: 5px corners and a 3px Dusty Rose border drawn as a ring over the photo's edge (so the
+   photo never shows a coloured box while it fades in). On hover a band of light sweeps once along the frame,
+   never across the photograph; leaving resets it instantly so it can play again. The element using it must
+   already be positioned (relative, absolute or sticky). Full-bleed heroes are never framed. */
+@utility frame {
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: var(--radius-frame);
+  box-shadow: var(--shadow-frame);
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    pointer-events: none;
+    border-radius: inherit;
+    padding: var(--frame-width);
+    background:
+      linear-gradient(115deg, transparent 36%, rgb(255 247 242 / 0.95) 50%, transparent 64%) 100% 0 / 260% 100% no-repeat,
+      var(--color-rose);
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+  &:hover::after,
+  &:focus-visible::after {
+    background-position: 0% 0;
+    transition: background-position 1.2s var(--ease-site);
+  }
+}
+
+/* A fine film grain over dark sections: a subtle texture so flat burgundy never looks digital. */
+@utility grain {
+  position: relative;
+  isolation: isolate;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.09;
+    mix-blend-mode: soft-light;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-ivory font-sans text-body text-charcoal antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--color-rose);
+    color: var(--color-white);
+  }
+
+  :focus-visible {
+    @apply outline-1 outline-offset-4 outline-rose;
+  }
+
+  img {
+    user-select: none;
+  }
+
+  /* Keep visually-hidden helper text (e.g. "opens in a new tab") anchored to its link, so it can never
+     widen the page from inside a clipped, sideways-scrolling strip. */
+  a:has(> .sr-only),
+  button:has(> .sr-only) {
+    position: relative;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer components {
+  /* Buttons: refined pills. A fill rises from the bottom edge on hover and the arrow slides on. */
+  .btn {
+    @apply label relative isolate inline-flex min-h-[3.25rem] items-center justify-center gap-3 overflow-hidden rounded-full border px-8 text-center whitespace-nowrap;
+    box-shadow: var(--shadow-button);
+    transition:
+      color 0.7s var(--ease-site),
+      border-color 0.7s var(--ease-site),
+      background-color 0.7s var(--ease-site);
+  }
+  .btn::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    z-index: -1;
+    border-radius: inherit;
+    background: var(--btn-fill);
+    transform: translateY(101%);
+    transition: transform 0.9s var(--ease-site);
+  }
+  .btn:hover::before,
+  .btn:focus-visible::before {
+    transform: translateY(0);
+  }
+  .btn .btn-arrow {
+    transition: transform 0.9s var(--ease-site);
+  }
+  .btn:hover .btn-arrow,
+  .btn:focus-visible .btn-arrow {
+    transform: translateX(4px);
+  }
+  .btn:disabled {
+    @apply cursor-not-allowed opacity-60;
+  }
+  .btn-sm {
+    @apply min-h-11 px-6;
+  }
+
+  /* Light grounds */
+  .btn-burgundy {
+    @apply border-burgundy bg-burgundy text-white hover:border-cherry focus-visible:border-cherry;
+    --btn-fill: var(--color-cherry);
+  }
+  .btn-outline {
+    @apply border-burgundy/50 text-burgundy hover:border-burgundy hover:text-white focus-visible:text-white;
+    --btn-fill: var(--color-burgundy);
+  }
+  /* Dark grounds */
+  .btn-ivory {
+    @apply border-ivory bg-ivory text-cherry hover:border-blush focus-visible:border-blush;
+    --btn-fill: var(--color-blush);
+  }
+  .btn-outline-light {
+    @apply border-ivory/45 text-ivory hover:border-ivory hover:text-cherry focus-visible:text-cherry;
+    --btn-fill: var(--color-ivory);
+  }
+
+  /* Text link: a short rule that extends on hover. */
+  .text-link {
+    @apply label inline-flex min-h-11 items-center gap-4;
+  }
+  .text-link .rule {
+    @apply block h-px w-8 bg-current transition-[width] duration-700;
+  }
+  .text-link:hover .rule,
+  .text-link:focus-visible .rule {
+    @apply w-14;
+  }
+
+  /* Hairline link: a line that draws under the text on hover. */
+  .link-line {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.9s var(--ease-site),
+      color 0.6s var(--ease-site);
+  }
+  .link-line:hover,
+  .link-line:focus-visible,
+  .link-line[aria-current="page"] {
+    background-size: 100% 1px;
+  }
+
+  /* Image-card focus: the card under the pointer zooms in slightly and the other image cards in the same section
+     soften with a light blur, so the eye goes to the one you're looking at. Mouse only (taps on phones never leave
+     cards stuck blurred) and off for visitors who reduce motion. Uses the CSS "scale" and "filter" properties, so it
+     never fights the slide-up transforms Motion uses. */
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .frame {
+      transition:
+        scale 1.2s var(--ease-site),
+        filter 1s var(--ease-site);
+    }
+    .frame:hover {
+      scale: 1.03;
+      z-index: 10;
+    }
+    /* Sections marked .no-focus-blur keep their other cards sharp (the home page services trio). */
+    section:not(.no-focus-blur):has(.frame:hover) .frame:not(:hover) {
+      filter: blur(3px);
+    }
+  }
+
+  /* A frame inside a card or link shines when the whole card is hovered or focused. */
+  .group:hover .frame::after,
+  .group:focus-visible .frame::after {
+    background-position: 0% 0;
+    transition: background-position 1.2s var(--ease-site);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .frame::after {
+      transition: none !important;
+    }
+  }
+
+  /* Photo that zooms gently inside its frame on hover (mouse only). */
+  .zoom-frame {
+    overflow: hidden;
+  }
+  .zoom-frame img {
+    transition:
+      scale 1.6s var(--ease-site),
+      opacity 1.2s var(--ease-site),
+      filter 1.2s var(--ease-site);
+  }
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .zoom-frame:hover img,
+    .group:hover .zoom-frame img,
+    .group:focus-visible .zoom-frame img {
+      scale: 1.06;
+    }
+  }
+
+  /* Form controls: underlined fields, editorial rather than boxed. */
+  .field-control {
+    @apply block w-full rounded-none border-0 border-b bg-transparent px-0 pt-2 pb-3 font-sans text-body outline-none transition-colors duration-500;
+    -webkit-appearance: none;
+    appearance: none;
+    min-height: 2.75rem;
+  }
+  .field-control::placeholder {
+    color: currentColor;
+    opacity: 0.45;
+  }
+  select.field-control {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%23a66c70' stroke-width='1.4'%3E%3Cpath d='M1 1.5l5 5 5-5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.25rem center;
+    padding-right: 1.75rem;
+  }
+  select.field-control option {
+    color: var(--color-charcoal);
+    background: var(--color-white);
+  }
+  .field-control::-webkit-calendar-picker-indicator {
+    opacity: 0.55;
+    cursor: pointer;
+  }
+  .on-dark .field-control {
+    color-scheme: dark;
+  }
+
+  /* Range slider (music player volume). */
+  .range {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 1px;
+    background: linear-gradient(to right, var(--color-blush) var(--fill, 50%), rgb(242 233 227 / 0.2) var(--fill, 50%));
+    cursor: pointer;
+  }
+  .range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 11px;
+    height: 11px;
+    border-radius: 999px;
+    background: var(--color-ivory);
+  }
+  .range::-moz-range-thumb {
+    width: 11px;
+    height: 11px;
+    border: 0;
+    border-radius: 999px;
+    background: var(--color-ivory);
+  }
+
+  /* Checkbox chips (wedding services). */
+  .chip {
+    @apply inline-flex min-h-11 cursor-pointer items-center gap-3 rounded-full border px-5 text-small transition-colors duration-500 select-none;
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/*
+  H2 section headings share the H1 font (BeautyLuxury). Its lowercase letters are swash capitals, so headings are
+  set in capitals; the font has no italic, so accent words stay upright and keep only their colour.
+  Unlayered on purpose: it must win over the .statement and .italic utilities those headings also carry.
+  (Small uppercase labels that are h2 for structure, like the footer column titles, use .label and are untouched.)
+*/
+h2.statement {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+h2.statement .italic,
+h2.statement em {
+  font-style: normal;
+}

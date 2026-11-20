@@ -1,0 +1,927 @@
+{
+ "carla": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 3531,
+  "height": 4671,
+  "alt": "Carla, owner and stylist, in the salon at Elite Hair & Beauty",
+  "cats": [],
+  "tone": "#7d6b5b"
+ },
+ "nikki": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2160,
+  "height": 2700,
+  "alt": "Nikki, stylist at Elite Hair & Beauty",
+  "cats": [],
+  "tone": "#443e3a"
+ },
+ "erin": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2160,
+  "height": 2700,
+  "alt": "Erin, stylist at Elite Hair & Beauty",
+  "cats": [],
+  "tone": "#494239"
+ },
+ "stacey": {
+  "sizes": [
+   640,
+   1258
+  ],
+  "width": 1258,
+  "height": 1404,
+  "alt": "Stacey, stylist at Elite Hair & Beauty",
+  "cats": [],
+  "tone": "#a4998f"
+ },
+ "britney": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2160,
+  "height": 2700,
+  "alt": "Britney, stylist at Elite Hair & Beauty",
+  "cats": [],
+  "tone": "#544f49"
+ },
+ "emma": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2160,
+  "height": 2700,
+  "alt": "Emma, stylist at Elite Hair & Beauty",
+  "cats": [],
+  "tone": "#49463f"
+ },
+ "dane": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2160,
+  "height": 2700,
+  "alt": "Dané, stylist at Elite Hair & Beauty",
+  "cats": [],
+  "tone": "#43403e"
+ },
+ "ilahm": {
+  "sizes": [
+   640,
+   703
+  ],
+  "width": 703,
+  "height": 877,
+  "alt": "Ilahm, beautician at Elite Hair & Beauty",
+  "cats": [],
+  "tone": "#525147"
+ },
+ "megan": {
+  "sizes": [
+   640,
+   1088
+  ],
+  "width": 1088,
+  "height": 1230,
+  "alt": "Megan, health and beauty therapist at Elite Hair & Beauty",
+  "cats": [],
+  "tone": "#8c8178"
+ },
+ "monique": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2160,
+  "height": 2700,
+  "alt": "Monique, salon co-ordinator at Elite Hair & Beauty",
+  "cats": [],
+  "tone": "#4a4640"
+ },
+ "sally": {
+  "sizes": [
+   640,
+   1112
+  ],
+  "width": 1112,
+  "height": 1222,
+  "alt": "Sally, blow-dry specialist at Elite Hair & Beauty",
+  "cats": [],
+  "tone": "#8c8580"
+ },
+ "melody": {
+  "sizes": [
+   640,
+   1132
+  ],
+  "width": 1132,
+  "height": 1262,
+  "alt": "Melody, operator at Elite Hair & Beauty",
+  "cats": [],
+  "tone": "#8c8882"
+ },
+ "rhina": {
+  "sizes": [
+   640,
+   1272
+  ],
+  "width": 1272,
+  "height": 1292,
+  "alt": "Rhina, operator at Elite Hair & Beauty",
+  "cats": [],
+  "tone": "#89837e"
+ },
+ "angie": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 3720,
+  "height": 4919,
+  "alt": "Angie, operator at Elite Hair & Beauty",
+  "cats": [],
+  "tone": "#625243"
+ },
+ "carla-dylan": {
+  "sizes": [
+   640,
+   914
+  ],
+  "width": 914,
+  "height": 1280,
+  "alt": "Carla and Dylan, the husband-and-wife team behind Elite Hair & Beauty",
+  "cats": [],
+  "tone": "#6b5d4c"
+ },
+ "team": {
+  "sizes": [
+   640,
+   1280,
+   2000
+  ],
+  "width": 2160,
+  "height": 2700,
+  "alt": "The Elite Hair & Beauty team on the steps outside the salon at The1054, Walmer",
+  "cats": [],
+  "tone": "#6a5b57"
+ },
+ "nails-at-elite": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2560,
+  "height": 1700,
+  "alt": "A nail technician at work at the Elite nail bar",
+  "cats": [
+   "nails"
+  ],
+  "tone": "#5e5850"
+ },
+ "blowdry-at-elite": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2560,
+  "height": 1700,
+  "alt": "A stylist finishing a blow-dry in the salon",
+  "cats": [
+   "styling"
+  ],
+  "tone": "#58524c"
+ },
+ "salon-lounge": {
+  "sizes": [
+   640,
+   1280,
+   2000
+  ],
+  "width": 2048,
+  "height": 1536,
+  "alt": "The welcome lounge: rattan pendant lights, cream chairs and the Elite retail wall",
+  "cats": [
+   "salon"
+  ],
+  "tone": "#a38878"
+ },
+ "salon-palms": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2048,
+  "height": 1536,
+  "alt": "A styling station against the palm-leaf feature wall",
+  "cats": [
+   "salon"
+  ],
+  "tone": "#8c7b75"
+ },
+ "salon-retail": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2048,
+  "height": 1536,
+  "alt": "The retail wall stocked with professional hair care beneath the Elite Hair & Beauty sign",
+  "cats": [
+   "salon"
+  ],
+  "tone": "#9f8d86"
+ },
+ "salon-reception": {
+  "sizes": [
+   640,
+   1280,
+   2000
+  ],
+  "width": 2048,
+  "height": 1536,
+  "alt": "Reception and the Elite Hair & Beauty welcome desk",
+  "cats": [
+   "salon"
+  ],
+  "tone": "#9f8577"
+ },
+ "salon-floor": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2048,
+  "height": 1536,
+  "alt": "Styling chairs and round mirrors on the salon floor",
+  "cats": [
+   "salon"
+  ],
+  "tone": "#927d6e"
+ },
+ "salon-stations": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2048,
+  "height": 1536,
+  "alt": "Styling stations with shelving, plants and pendant lights",
+  "cats": [
+   "salon"
+  ],
+  "tone": "#88746e"
+ },
+ "salon-light": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2048,
+  "height": 1536,
+  "alt": "The salon floor in afternoon light",
+  "cats": [
+   "salon"
+  ],
+  "tone": "#8a7060"
+ },
+ "salon-mirrors": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2048,
+  "height": 1536,
+  "alt": "Mirrored styling stations along the salon",
+  "cats": [
+   "salon"
+  ],
+  "tone": "#a28a77"
+ },
+ "salon-wide": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2048,
+  "height": 1536,
+  "alt": "The open-plan salon at The1054 in Walmer",
+  "cats": [
+   "salon"
+  ],
+  "tone": "#a88c71"
+ },
+ "salon-working": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2048,
+  "height": 1536,
+  "alt": "Stylists at work on the salon floor",
+  "cats": [
+   "salon"
+  ],
+  "tone": "#9c8574"
+ },
+ "salon-lounge-side": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2048,
+  "height": 1536,
+  "alt": "The lounge and nail bar beside the retail wall",
+  "cats": [
+   "salon"
+  ],
+  "tone": "#967f70"
+ },
+ "nail-bar": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2048,
+  "height": 1536,
+  "alt": "A nail station by the window, with a wall of polish colours",
+  "cats": [
+   "nails"
+  ],
+  "tone": "#948580"
+ },
+ "nail-bar-colour": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2048,
+  "height": 1536,
+  "alt": "The nail bar and its wall of polish beside the salon floor",
+  "cats": [
+   "nails"
+  ],
+  "tone": "#8e7d75"
+ },
+ "salon-desk": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2048,
+  "height": 1536,
+  "alt": "The Elite Hair & Beauty desk at the entrance",
+  "cats": [
+   "salon"
+  ],
+  "tone": "#9f8a87"
+ },
+ "salon-entrance": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2048,
+  "height": 1536,
+  "alt": "The glass entrance of Elite Hair & Beauty, unit 02 at The1054",
+  "cats": [
+   "salon"
+  ],
+  "tone": "#968a89"
+ },
+ "salon-exterior": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2048,
+  "height": 1536,
+  "alt": "Outside Elite Hair & Beauty at The1054, with Nioxin, Wella and Kadus window displays",
+  "cats": [
+   "salon"
+  ],
+  "tone": "#9b8b86"
+ },
+ "salon-1054": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 2048,
+  "height": 1536,
+  "alt": "The1054 building, home of Elite Hair & Beauty on Main Road, Walmer",
+  "cats": [
+   "salon"
+  ],
+  "tone": "#938380"
+ },
+ "hero": {
+  "sizes": [
+   640,
+   1280,
+   2000
+  ],
+  "width": 3000,
+  "height": 4000,
+  "alt": "A woman with glossy dark hair in motion, looking over her shoulder against a warm terracotta wall",
+  "cats": [],
+  "tone": "#73462d",
+  "credit": "https://unsplash.com/photos/3q08gnmPBko"
+ },
+ "editorial-blonde": {
+  "sizes": [
+   640,
+   1280,
+   2000
+  ],
+  "width": 3000,
+  "height": 4500,
+  "alt": "A woman with long, soft blonde waves in a black top",
+  "cats": [],
+  "tone": "#35302f",
+  "credit": "https://unsplash.com/photos/et_78QkMMQs"
+ },
+ "colour-waves": {
+  "sizes": [
+   640,
+   1280,
+   2000
+  ],
+  "width": 3000,
+  "height": 3000,
+  "alt": "Two women seen from behind, one with golden blonde waves and one with warm brunette waves",
+  "cats": [],
+  "tone": "#807268",
+  "credit": "https://unsplash.com/photos/RpFQdgJ9gQw"
+ },
+ "sleek-bob": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 3000,
+  "height": 3736,
+  "alt": "A glossy, precision-cut brunette bob seen from behind",
+  "cats": [],
+  "tone": "#847569",
+  "credit": "https://unsplash.com/photos/TcWwRcf92GY"
+ },
+ "blowdry-brush": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 3000,
+  "height": 4500,
+  "alt": "A round brush smoothing long blonde hair during a blow-dry",
+  "cats": [],
+  "tone": "#b3b3b1",
+  "credit": "https://unsplash.com/photos/ezCE4"
+ },
+ "blowdry-salon": {
+  "sizes": [
+   640,
+   1280,
+   2000
+  ],
+  "width": 3000,
+  "height": 2003,
+  "alt": "A stylist blow-drying a client's hair with a round brush",
+  "cats": [],
+  "tone": "#877a70",
+  "credit": "https://unsplash.com/photos/FkAZqQJTbXM"
+ },
+ "hair-motion": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 3000,
+  "height": 4500,
+  "alt": "A black-and-white portrait of a woman with hair caught in motion",
+  "cats": [],
+  "tone": "#7b7d77",
+  "credit": "https://unsplash.com/photos/VFZF_pzTVBA"
+ },
+ "lashes": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 3000,
+  "height": 4500,
+  "alt": "A therapist applying lash extensions",
+  "cats": [],
+  "tone": "#927869",
+  "credit": "https://unsplash.com/photos/sRSRuxkOuzI"
+ },
+ "eye-makeup": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 3000,
+  "height": 4500,
+  "alt": "Close-up of eyeshadow being blended with a fine brush",
+  "cats": [],
+  "tone": "#8d6653",
+  "credit": "https://unsplash.com/photos/aJ4DWng"
+ },
+ "nails-mauve": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 3000,
+  "height": 3001,
+  "alt": "Hands with a mauve, white and silver manicure on soft knit",
+  "cats": [],
+  "tone": "#e3ccc8",
+  "credit": "https://unsplash.com/photos/1vzVds"
+ },
+ "nails-blush": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 3000,
+  "height": 3829,
+  "alt": "A hand with a soft blush manicure resting on cream fabric",
+  "cats": [],
+  "tone": "#bd9f89",
+  "credit": "https://unsplash.com/photos/vtQHwU4F13s"
+ },
+ "facial": {
+  "sizes": [
+   640,
+   1280,
+   2000
+  ],
+  "width": 3000,
+  "height": 1995,
+  "alt": "A woman relaxing during a facial treatment",
+  "cats": [],
+  "tone": "#aeab9f",
+  "credit": "https://unsplash.com/photos/PqyzuzFiQfY"
+ },
+ "massage": {
+  "sizes": [
+   640,
+   1280,
+   2000
+  ],
+  "width": 3000,
+  "height": 1941,
+  "alt": "Hands giving a calming facial massage by candlelight",
+  "cats": [],
+  "tone": "#341d0e",
+  "credit": "https://unsplash.com/photos/WAm_HaI4W2E"
+ },
+ "bridal-vine": {
+  "sizes": [
+   640,
+   1280,
+   2000
+  ],
+  "width": 3000,
+  "height": 4508,
+  "alt": "A bride's loose waves woven with a crystal hair vine, seen from behind",
+  "cats": [],
+  "tone": "#9f9788",
+  "credit": "https://unsplash.com/photos/yq2zyWLzaR0"
+ },
+ "bridal-braid": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 3000,
+  "height": 4500,
+  "alt": "A braided bridal updo with pearl pins and a veil",
+  "cats": [],
+  "tone": "#908175",
+  "credit": "https://unsplash.com/photos/ZgdAGqdFDd0"
+ },
+ "bridal-veil": {
+  "sizes": [
+   640,
+   1280,
+   2000
+  ],
+  "width": 3000,
+  "height": 4500,
+  "alt": "A bride with a jewelled headpiece and sheer veil, seen from behind",
+  "cats": [],
+  "tone": "#b0aca5",
+  "credit": "https://unsplash.com/photos/nKsev-cGRuA"
+ },
+ "bridal-chignon": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 3000,
+  "height": 4497,
+  "alt": "A low blonde chignon finished with pearl pins",
+  "cats": [],
+  "tone": "#c5c2a4",
+  "credit": "https://unsplash.com/photos/jJr6EJrf124"
+ },
+ "bridal-laughing": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 3000,
+  "height": 3750,
+  "alt": "A laughing bride with soft waves and a veil, in black and white",
+  "cats": [],
+  "tone": "#626262",
+  "credit": "https://unsplash.com/photos/Q4otPDG3NTQ"
+ },
+ "bridal-ready": {
+  "sizes": [
+   640,
+   1280,
+   2000
+  ],
+  "width": 3000,
+  "height": 2383,
+  "alt": "A bride being laced into her gown on the morning of the wedding",
+  "cats": [],
+  "tone": "#9e8674",
+  "credit": "https://unsplash.com/photos/BPwR5_GSe0"
+ },
+ "bridal-makeup": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 3000,
+  "height": 4500,
+  "alt": "A make-up artist applying blush to a bride in a satin robe",
+  "cats": [],
+  "tone": "#9b8266",
+  "credit": "https://unsplash.com/photos/tKUG1Ckuryw"
+ },
+ "bridal-updo": {
+  "sizes": [
+   640,
+   1280,
+   2000
+  ],
+  "width": 3000,
+  "height": 2000,
+  "alt": "A stylist setting a sculpted bridal updo with a jewelled pin",
+  "cats": [],
+  "tone": "#8b7e6f",
+  "credit": "https://unsplash.com/photos/EEo_VkcATgw"
+ },
+ "ba1-before": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 1768,
+  "height": 2420,
+  "alt": "Before: wavy dark-blonde hair",
+  "cats": [],
+  "tone": "#8a796b"
+ },
+ "ba1-after": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 1768,
+  "height": 2420,
+  "alt": "After: Bright, blended blonde balayage",
+  "cats": [
+   "transformations",
+   "balayage",
+   "colour"
+  ],
+  "tone": "#8b8781",
+  "pair": "ba1-before"
+ },
+ "ba2-before": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 1698,
+  "height": 2410,
+  "alt": "Before: long, flat brunette hair",
+  "cats": [],
+  "tone": "#6f655f"
+ },
+ "ba2-after": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 1698,
+  "height": 2410,
+  "alt": "After: Glossy, defined brunette waves",
+  "cats": [
+   "transformations",
+   "styling"
+  ],
+  "tone": "#71675c",
+  "pair": "ba2-before"
+ },
+ "ba3-before": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 1774,
+  "height": 2412,
+  "alt": "Before: brassy blonde lengths",
+  "cats": [],
+  "tone": "#73716b"
+ },
+ "ba3-after": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 1774,
+  "height": 2412,
+  "alt": "After: Cool, icy blonde, sleek and straight",
+  "cats": [
+   "transformations",
+   "colour"
+  ],
+  "tone": "#9ca29d",
+  "pair": "ba3-before"
+ },
+ "ba4-before": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 1762,
+  "height": 2404,
+  "alt": "Before: dark brunette lengths",
+  "cats": [],
+  "tone": "#685e56"
+ },
+ "ba4-after": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 1762,
+  "height": 2404,
+  "alt": "After: Soft blonde balayage with loose waves",
+  "cats": [
+   "transformations",
+   "balayage"
+  ],
+  "tone": "#847c76",
+  "pair": "ba4-before"
+ },
+ "ba5-before": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 1764,
+  "height": 2402,
+  "alt": "Before: brown hair with grown-out ends",
+  "cats": [],
+  "tone": "#65635f"
+ },
+ "ba5-after": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 1764,
+  "height": 2402,
+  "alt": "After: Light, even all-over blonde",
+  "cats": [
+   "transformations",
+   "colour"
+  ],
+  "tone": "#868580",
+  "pair": "ba5-before"
+ },
+ "ba6-before": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 1770,
+  "height": 2408,
+  "alt": "Before: faded light-brown lengths",
+  "cats": [],
+  "tone": "#796b5e"
+ },
+ "ba6-after": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 1770,
+  "height": 2408,
+  "alt": "After: Rich, glossy dark brunette",
+  "cats": [
+   "transformations",
+   "colour"
+  ],
+  "tone": "#403f39",
+  "pair": "ba6-before"
+ },
+ "ba7-before": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 1768,
+  "height": 2404,
+  "alt": "Before: solid black hair",
+  "cats": [],
+  "tone": "#43413d"
+ },
+ "ba7-after": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 1768,
+  "height": 2404,
+  "alt": "After: Caramel balayage with soft movement",
+  "cats": [
+   "transformations",
+   "balayage"
+  ],
+  "tone": "#736d6a",
+  "pair": "ba7-before"
+ },
+ "ba8-before": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 1776,
+  "height": 2406,
+  "alt": "Before: faded orange curls",
+  "cats": [],
+  "tone": "#766757"
+ },
+ "ba8-after": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 1776,
+  "height": 2406,
+  "alt": "After: Vivid copper curls",
+  "cats": [
+   "transformations",
+   "colour",
+   "styling"
+  ],
+  "tone": "#8c7f7c",
+  "pair": "ba8-before"
+ },
+ "ba9-before": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 1904,
+  "height": 2096,
+  "alt": "Before: long blonde lengths",
+  "cats": [],
+  "tone": "#89837d"
+ },
+ "ba9-after": {
+  "sizes": [
+   640,
+   1280
+  ],
+  "width": 1904,
+  "height": 2096,
+  "alt": "After: Warm brunette with defined waves",
+  "cats": [
+   "transformations",
+   "colour",
+   "styling"
+  ],
+  "tone": "#726a5f",
+  "pair": "ba9-before"
+ }
+}
