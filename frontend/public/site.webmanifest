@@ -2,8 +2,8 @@
   "name": "Elite Hair & Beauty",
   "short_name": "Elite",
   "icons": [
-    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
   ],
   "theme_color": "#351d27",
   "background_color": "#f2e9e3",

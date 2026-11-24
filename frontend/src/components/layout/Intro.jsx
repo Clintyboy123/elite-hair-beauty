@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'motion/react';
 import BlurInHeading from '../ui/BlurInHeading';
 import useScrollLock from '../../hooks/useScrollLock';
 import { ease } from '../../utils/motion';
+import { asset } from '../../utils/asset';
 
 // The welcome, on every full load of the site: "WELCOME" comes into focus letter by letter on the cherry stage,
 // the welcome voice plays by itself, and when it ends the screen fades away to reveal the page. Nothing to click.
@@ -15,7 +16,7 @@ import { ease } from '../../utils/motion';
 // "Skip intro" skips the voice too; turning the music on by hand also cancels a voice still waiting.
 // Trimmed to the spoken part plus its natural tail (2.8 s), so the music can follow straight on. Bump ?v= when
 // replacing the file so browsers fetch the new one.
-const SOUND = '/audio/welcome.m4a?v=2026-11-20b';
+const SOUND = asset('audio/welcome.m4a?v=2026-11-20b');
 const SOUND_START = 1.7; // seconds: once the word has come into focus
 const SILENT_HOLD = 2.2; // seconds the word stays on screen when the browser blocks the sound
 const MAX_WAIT = 9; // seconds of playback before handing over regardless

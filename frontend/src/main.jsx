@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router';
 import { MotionGlobalConfig } from 'motion/react';
 import App from './App';
+import { BASE } from './utils/asset';
 import './styles/index.css';
 
 // Every load starts at the top; page changes handle their own scrolling.
@@ -28,7 +29,7 @@ if (import.meta.env.DEV && new URLSearchParams(window.location.search).has('bloc
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={BASE}>
       <App />
     </BrowserRouter>
   </StrictMode>
